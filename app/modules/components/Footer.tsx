@@ -2,8 +2,8 @@ import { Facebook, Instagram, Music2, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="w-full border-t bg-white text-gray-600">
-      <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
+    <footer className="w-full max-w-[1880px]  bg-white text-gray-600 absolute bottom-2 flex ">
+      <div className="w-full  mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
         {/* Left side */}
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-sm">
           <img src="/fetti-name-logo.svg" alt="Logo" />
