@@ -8,7 +8,7 @@ export default function HeroSection() {
     // Main Class section handles of background gradient and layout
   <section className="relative w-full min-h-screen h-screen overflow-hidden flex bg-gradient-to-br from-pink-600 to-pink-400 rounded-2xl">
       {/* Left Content */}
-      <div className="flex-1 z-10 flex flex-col justify-center px-4 py-8 md:px-16 md:py-12">
+      <div className="flex-1 z-10 flex flex-col justify-center pl-8 pr-4 py-8 md:pl-50 md:px-16 md:py-12">
         <span className="inline-block bg-white text-pink-600 px-4 py-1 rounded-full font-medium mb-4 text-sm shadow w-fit">
           ✦ creative marketplace
         </span>
