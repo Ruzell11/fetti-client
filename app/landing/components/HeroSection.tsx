@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -20,10 +21,12 @@ export default function HeroSection() {
           find your next favorite
           <br className="hidden md:block" />
           event supplier on{" "}
-          <img
+          <Image
             src="/webp-assets/fetti-title.webp"
             alt="fetti"
-            className="inline h-15 align-middle"
+            width={120}
+            height={60}
+            className="inline align-middle"
           />
         </h1>
 
@@ -41,11 +44,13 @@ export default function HeroSection() {
       </div>
 
       {/* Image-14 in right corner of the section */}
-      <img
+      <Image
         src="/webp-assets/image-14.webp"
         alt="Hero"
-        className="absolute right-0 bottom-0 h-[90%] object-contain rounded-xl"
-        style={{ mixBlendMode: "multiply", top: 'auto' }}
+        width={800}
+        height={600}
+        className="absolute right-0 bottom-0 h-[90%] object-cover"
+        style={{ mixBlendMode: "multiply" }}
       />
     </section>
   );

@@ -1,20 +1,21 @@
 "use client";
 
+import { useState } from "react";
+import Image from "next/image";
 
 // Static data (this is the data in the button, further styling can be applied importantly is the assets)
 const categories = [
-  { name: "baking" },
-  { name: "media" },
-  { name: "rentals" },
-  { name: "flowers" },
-  { name: "favors" },
-  { name: "make up" },
-  { name: "guest activity" },
-  { name: "snack bar" },
-  { name: "gifts" },
-  { name: "more" },
+  { name: "baking", icon: "/webp-assets/baking-ico.webp" },
+  { name: "media", icon: "/webp-assets/media-ico.webp" },
+  { name: "rentals", icon: "/webp-assets/rentals-ico.webp" },
+  { name: "flowers", icon: "/webp-assets/flowers-ico.webp" },
+  { name: "favors", icon: "/webp-assets/favors-ico.webp" },
+  { name: "make up", icon: "/webp-assets/makeup-ico.webp" },
+  { name: "guest activity", icon: "/webp-assets/guest-activity-ico.webp" },
+  { name: "snack bar", icon: "/webp-assets/snack-bar-ico.webp" },
+  { name: "gifts", icon: "/webp-assets/gift-ico.webp" },
+  { name: "more", icon: "/webp-assets/more-ico.webp" },
 ];
-
 
 // Static data (should be connected to a database of supplier information)
 const suppliers = [
@@ -38,8 +39,6 @@ const suppliers = [
   },
 ];
 
-import { useState } from "react";
-
 export default function FeatureSection() {
   const [selected, setSelected] = useState(0);
   return (
@@ -48,20 +47,27 @@ export default function FeatureSection() {
         uncovering hidden <span className="text-pink-500">gems</span> in
       </h2>
       <div
-        className="grid grid-cols-5 grid-rows-2 gap-x-6 gap-y-3 mb-8 w-full max-w-6xl mx-auto items-start"
-        style={{ minHeight: 2 * 74.5 + 12 }}
+        className="grid grid-cols-5 grid-rows-2 gap-x-12 gap-y-8 mb-8 w-full max-w-6xl mx-auto items-start"
+        style={{ minHeight: 2 * 74.5 + 32 }}
       >
         {categories.map((cat, idx) => (
           <button
             key={cat.name}
-            style={{ height: 74.5, alignSelf: "start" }}
-            className={`w-full flex items-center justify-center rounded-full border transition-colors duration-150 font-medium text-lg focus:outline-none ${
+            style={{ height: 74.5, alignSelf: "start", borderRadius: "15px" }}
+            className={`w-full flex items-center justify-center gap-3 border transition-colors duration-150 font-medium text-base focus:outline-none ${
               selected === idx
                 ? "border-pink-500 bg-pink-50 text-pink-600 shadow-pink-100 shadow"
                 : "border-gray-200 bg-white text-black"
             }`}
             onClick={() => setSelected(idx)}
           >
+            <Image
+              src={cat.icon}
+              alt={`${cat.name} icon`}
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
             {cat.name}
           </button>
         ))}
