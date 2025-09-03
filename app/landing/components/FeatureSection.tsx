@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 
 // Static data (this is the data in the button, further styling can be applied importantly is the assets)
 const categories = [
