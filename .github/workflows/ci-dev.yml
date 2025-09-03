@@ -1,4 +1,4 @@
-name: Lead Hive Client CI
+name: Ci Dev Fetti
 
 on:
   push:
