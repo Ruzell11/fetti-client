@@ -2,6 +2,7 @@
 import LandingHeader from "./components/LandingHeader";
 import HeroSection from "./components/HeroSection";
 import FeatureSection from "./components/FeatureSection";
+import { CreativitySection } from "./components/CreativitySection";
 
 export default function Landing() {
   return (
@@ -9,6 +10,7 @@ export default function Landing() {
       <LandingHeader />
       <HeroSection />
       <FeatureSection />
+      <CreativitySection/>
     </main>
   );
 }
