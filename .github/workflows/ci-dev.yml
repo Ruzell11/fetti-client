@@ -36,8 +36,9 @@ jobs:
           username: ${{ secrets.DEV_SERVER_USER }}
           key: ${{ secrets.DEV_SSH_KEY }}
           script: |
-            cd /home/ubuntu/fetti-client
-            git pull origin master
+            cd /home/fetti-client
+            git pull origin dev
+            git checkout dev
             npm install
             npm run build  
             sudo systemctl restart client.service
@@ -46,12 +47,12 @@ jobs:
         if: success()
         run: |
           curl -X POST -H "Content-Type: application/json" \
-          -d '{"content": "🚀 Deployment to Production of Client was successful!"}' \
+          -d '{"content": "🚀 Deployment to Dev of Client was successful!"}' \
           ${{ secrets.DEV_WEBHOOK }}
 
       - name: Notify Discord (Failure)
         if: failure()
         run: |
           curl -X POST -H "Content-Type: application/json" \
-          -d '{"content": "❌ Deployment to Production of Client failed!"}' \
+          -d '{"content": "❌ Deployment to Dev of Client failed!"}' \
           ${{ secrets.DEV_WEBHOOK }}
