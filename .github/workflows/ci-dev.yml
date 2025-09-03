@@ -41,7 +41,7 @@ jobs:
             git checkout dev
             npm install
             npm run build  
-            sudo systemctl restart client.service
+            pm2 restart client
 
       - name: Notify Discord (Success)
         if: success()
