@@ -46,7 +46,7 @@ jobs:
 
       # 6. Notify Discord
       - name: Notify Discord
-        uses: Ilshidur/action-discord@v2
+        uses: Ilshidur/action-discord@v1
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
           message: "✅ Dev Frontend has been deployed successfully from branch ${{ github.ref }} by ${{ github.actor }}"
