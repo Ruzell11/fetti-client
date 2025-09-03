@@ -8,6 +8,7 @@ import { Mail, Lock, User, Briefcase } from "lucide-react";
 import Footer from "../modules/components/Footer";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import Image from 'next/image';
 
 export default function Signup() {
     const [isEventPlanner, setIsEventPlanner] = useState<boolean>(true);
@@ -156,9 +157,11 @@ export default function Signup() {
                                             className={`cursor-pointer border rounded-lg overflow-hidden flex items-center gap-3 p-3 hover:border-pink-600 ${isEventPlanner && "ring-2 ring-pink-600"
                                                 }`}
                                         >
-                                            <img
+                                            <Image
                                                 src="/images/event-planner.png"
                                                 alt="Event Planner"
+                                                width={48}
+                                                height={48}
                                                 className="h-12 w-12 object-cover rounded-md"
                                             />
                                             <span className="text-sm font-medium whitespace-nowrap">
@@ -171,9 +174,11 @@ export default function Signup() {
                                             className={`cursor-pointer border rounded-lg overflow-hidden flex items-center gap-3 p-3 hover:border-pink-600 ${!isEventPlanner && "ring-2 ring-pink-600"
                                                 }`}
                                         >
-                                            <img
+                                            <Image
                                                 src="/images/creative-supplier.png"
                                                 alt="Creative Supplier"
+                                                width={48}
+                                                height={48}
                                                 className="h-12 w-12 object-cover rounded-md"
                                             />
                                             <span className="text-sm font-medium whitespace-nowrap">

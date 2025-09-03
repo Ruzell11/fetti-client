@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Music2, Youtube } from "lucide-react";
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="w-full  mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
         {/* Left side */}
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-sm">
-          <img src="/fetti-name-logo.svg" alt="Logo" />
+          <Image src="/fetti-name-logo.svg" alt="Logo" width={80} height={24} />
           <span>© 2025</span>
           <a href="#" className="hover:text-pink-600">fetti Website</a>
           <a href="#" className="hover:text-pink-600">Privacy Policy</a>

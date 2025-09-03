@@ -1,5 +1,6 @@
 import { Bell, MessageSquare } from "lucide-react"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
+import Image from 'next/image';
 
 export default function SupplierNavbar() {
   return (
@@ -7,7 +8,7 @@ export default function SupplierNavbar() {
       {/* Left Section - Logo + Menu */}
       <div className="flex items-center gap-8">
         <div className="text-xl font-bold text-pink-600">
-             <img src="/fetti-logo.svg" alt="Logo" />
+             <Image src="/fetti-logo.svg" alt="Logo" width={120} height={40} />
         </div>
       
       </div>
