@@ -53,8 +53,7 @@ export default function FeatureSection() {
         {categories.map((cat, idx) => (
           <button
             key={cat.name}
-            style={{ height: 74.5, alignSelf: "start", borderRadius: "15px" }}
-            className={`w-full flex items-center justify-center gap-3 border transition-colors duration-150 font-medium text-base focus:outline-none ${
+            className={`w-full h-[74.5px] self-start rounded-[15px] flex items-center justify-center gap-3 border transition-colors duration-150 font-medium text-base focus:outline-none ${
               selected === idx
                 ? "border-pink-500 bg-pink-50 text-pink-600 shadow-pink-100 shadow"
                 : "border-gray-200 bg-white text-black"

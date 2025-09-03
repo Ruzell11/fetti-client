@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react";
+import Image from 'next/image';
 
 export default function Feed(){
     return (
@@ -45,55 +46,75 @@ export default function Feed(){
 
   {/* Gallery Section */}
   <div className="md:col-span-3 grid grid-cols-2 sm:grid-cols-5 gap-4">
-        <img
+        <Image
         src="/images/cake.png"
         alt="Gallery"
+        width={200}
+        height={200}
         className="w-full  object-contain rounded-lg"
         />
-          <img
+          <Image
         src="/images/cake.png"
         alt="Gallery"
+        width={200}
+        height={200}
         className="w-full  object-contain rounded-lg"
         />
-          <img
+          <Image
         src="/images/cake.png"
         alt="Gallery"
+        width={200}
+        height={200}
         className="w-full  object-contain rounded-lg"
         />
-          <img
+          <Image
         src="/images/cake.png"
         alt="Gallery"
+        width={200}
+        height={200}
         className="w-full  object-contain rounded-lg"
         />
-          <img
+          <Image
         src="/images/cake.png"
         alt="Gallery"
+        width={200}
+        height={200}
         className="w-full  object-contain rounded-lg"
         />
-          <img
+          <Image
         src="/images/cake.png"
         alt="Gallery"
+        width={200}
+        height={200}
         className="w-full  object-contain rounded-lg"
         />
-          <img
+          <Image
         src="/images/cake.png"
         alt="Gallery"
+        width={200}
+        height={200}
         className="w-full  object-contain rounded-lg"
         />
-          <img
+          <Image
         src="/images/cake.png"
         alt="Gallery"
+        width={200}
+        height={200}
         className="w-full  object-contain rounded-lg"
         />
-          <img
+          <Image
         src="/images/cake.png"
         alt="Gallery"
+        width={200}
+        height={200}
         className="w-full  object-contain rounded-lg"
         />
 
-          <img
+          <Image
         src="/images/cake.png"
         alt="Gallery"
+        width={200}
+        height={200}
         className="w-full  object-contain rounded-lg"
         />
    

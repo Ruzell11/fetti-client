@@ -1,4 +1,4 @@
-import { Card } from "@/components/ui/card";
+import Image from 'next/image';
 
 // Define props type
 type ServicesProps = {
@@ -14,9 +14,11 @@ const Services: React.FC<ServicesProps> = ({ view }) => {
           <div className="grid grid-cols-4 gap-4">
             {/* Example Service 1 */}
             <div className="flex flex-col items-start gap-5 flex-1 cursor-pointer border rounded-md overflow-hidden">
-              <img
+              <Image
                 src="/images/cake.png"
                 alt="Event Planner"
+                width={200}
+                height={400}
                 className="w-full h-100 object-cover"
               />
               <div className="px-3 pb-3">
@@ -35,9 +37,11 @@ const Services: React.FC<ServicesProps> = ({ view }) => {
             {/* Example Service 1 */}
             <div className="flex p-2 items-center gap-5 flex-1 border-b-1 cursor-pointer">
 
-              <img
+              <Image
                 src="/images/event-planner.png"
                 alt="Event Planner"
+                width={60}
+                height={60}
                 className="h-15 w-15 object-cover rounded-md"
               />
               <div>
@@ -49,9 +53,11 @@ const Services: React.FC<ServicesProps> = ({ view }) => {
 
             <div className="flex p-2 items-center gap-5 flex-1 border-b-1 cursor-pointer">
 
-              <img
+              <Image
                 src="/images/event-planner.png"
                 alt="Event Planner"
+                width={60}
+                height={60}
                 className="h-15 w-15 object-cover rounded-md"
               />
               <div>
@@ -63,9 +69,11 @@ const Services: React.FC<ServicesProps> = ({ view }) => {
 
             <div className="flex p-2 items-center gap-5 flex-1 border-b-1 cursor-pointer">
 
-              <img
+              <Image
                 src="/images/event-planner.png"
                 alt="Event Planner"
+                width={60}
+                height={60}
                 className="h-15 w-15 object-cover rounded-md"
               />
               <div>
@@ -77,9 +85,11 @@ const Services: React.FC<ServicesProps> = ({ view }) => {
 
             <div className="flex p-2 items-center gap-5 flex-1 border-b-1 cursor-pointer">
 
-              <img
+              <Image
                 src="/images/event-planner.png"
                 alt="Event Planner"
+                width={60}
+                height={60}
                 className="h-15 w-15 object-cover rounded-md"
               />
               <div>
@@ -92,9 +102,11 @@ const Services: React.FC<ServicesProps> = ({ view }) => {
 
             <div className="flex p-2 items-center gap-5 flex-1 border-b-1 cursor-pointer">
 
-              <img
+              <Image
                 src="/images/event-planner.png"
                 alt="Event Planner"
+                width={60}
+                height={60}
                 className="h-15 w-15 object-cover rounded-md"
               />
               <div>
@@ -106,9 +118,11 @@ const Services: React.FC<ServicesProps> = ({ view }) => {
 
             <div className="flex p-2 items-center gap-5 flex-1 border-b-1 cursor-pointer">
 
-              <img
+              <Image
                 src="/images/event-planner.png"
                 alt="Event Planner"
+                width={60}
+                height={60}
                 className="h-15 w-15 object-cover rounded-md"
               />
               <div>

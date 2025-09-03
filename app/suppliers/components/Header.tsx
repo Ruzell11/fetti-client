@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 import { Camera } from "lucide-react";
+import Image from 'next/image';
 
 export default function HeaderSupplier(){
     return (
@@ -8,9 +9,10 @@ export default function HeaderSupplier(){
         
               {/* Banner */}
               <div className="relative w-full h-60 bg-gray-200">
-                <img
-                  src="/images/banner.png   "
+                <Image
+                  src="/images/banner.png"
                   alt="Banner"
+                  fill
                   className="w-full h-full object-cover rounded-xl"
                 />
         
@@ -19,9 +21,11 @@ export default function HeaderSupplier(){
         <div className="absolute -bottom-18 left-8 flex items-end gap-4">
           {/* Profile Image */}
           <div className="relative">
-            <img
+            <Image
               src="/images/profile.png"
               alt="Profile"
+              width={128}
+              height={128}
               className="w-32 h-32 rounded-full ring-4 ring-white object-cover"
             />
             
