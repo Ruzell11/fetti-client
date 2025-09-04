@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import FeatureSection from "./components/FeatureSection";
 import { CreativitySection } from "./components/CreativitySection";
 import { CelebratingLove } from "./components/CelebratingLove";
+import { EventServicesSection } from "./components/EventServicesSection";
 
 export default function Landing() {
   return (
@@ -13,6 +14,7 @@ export default function Landing() {
       <FeatureSection />
       <CelebratingLove />
       <CreativitySection />
+      <EventServicesSection />
     </main>
   );
 }

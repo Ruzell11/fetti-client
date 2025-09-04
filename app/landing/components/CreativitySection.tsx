@@ -11,7 +11,7 @@ const creativityImages = [
 
 export const CreativitySection = () => {
   return (
-    <section className="min-h-screen w-full py-10 flex flex-col items-center">
+    <section className="min-h-screen w-full py-10 flex flex-col items-center px-4">
       {/* Images container */}
       <div className="grid grid-cols-2 py-3 lg:grid-cols-4 gap-2 lg:gap-7">
         {creativityImages.map((image, index) => (
