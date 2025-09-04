@@ -5,6 +5,8 @@ import FeatureSection from "./components/FeatureSection";
 import { CreativitySection } from "./components/CreativitySection";
 import { CelebratingLove } from "./components/CelebratingLove";
 import { EventServicesSection } from "./components/EventServicesSection";
+import { PlanSection } from "./components/PlanSection";
+import { StepSection } from "./components/StepSection";
 
 export default function Landing() {
   return (
@@ -13,6 +15,8 @@ export default function Landing() {
       <HeroSection />
       <FeatureSection />
       <CelebratingLove />
+      <PlanSection />
+      <StepSection />
       <CreativitySection />
       <EventServicesSection />
     </main>
